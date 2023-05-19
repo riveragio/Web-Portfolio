@@ -5,102 +5,106 @@
     grid-template-columns: repeat(2,1fr);
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #101214;
-    color: #7A7C80;
-
+    color: #FFF;
 }
 
-h2,.white{
-    color: #fff;
+.video-background {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-2{
+    position: relative;
+    z-index: 1;
 }
 
 a{
-    color: #7A7C80;
+    color: #ffffff;
     text-decoration: none;
 }
 
-/* section 1 */
 .section-1{
     padding-top: 40vh;
-    text-align: center;
+    padding-left: 5vh;
+    text-align: left;
 }
 
 .section-1 p{
     font-size: 1.1rem;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     margin:0;
+    color: #7A7C80;
+}
+
+.section-1 h1{
+	font-size: 3rem;
+    margin-bottom: 30px;
 }
 
 .section-1 h2{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .section-1 a{
-    font-size: 1.5rem;
     padding: 10px;
 }
 
-/* section 2 */
+button {
+	color: #ffffff;
+	background-color: #3b3b3b;
+	font-size: 15px;
+	border: 1px solid #ffffff;
+	border-radius: 15px;
+	padding: 15px 30px;
+	letter-spacing: 1px;
+	cursor: pointer
+}
+
+button:hover {
+	color: #ffffff;
+	background-color: #0a0a0a;
+}
+
 .section-2{
-    padding-top: 10vh;
-    width: 70%;
+	padding-top: 10vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
 }
 
-.section-2 h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
+img{
+	border-radius: 50%;
+	align-self: center;
+    border: 3px solid #FFF;
 }
 
-.section-2 p{
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    margin:0;
-}
-
-.section-2 a{
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem;
-    padding-left: 0;
-    width: 100px;
-}
-
-/* animations / utilities */
-.section-2 a:hover{
-    font-size: 1.3rem;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.section-1 a:hover{
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.white:hover{
-    position: relative;
-    padding-left: 10px;
-}
-
-/* media queres */
 @media(max-width:780px){
     .grid-2{
         grid-template-columns: 1fr;
     }
     .section-1{
-        padding:0;
-        padding-top: 5rem;
-    }
-    .section-2{
         padding: 0;
-        padding-left: 1.5rem;
-        padding-top: 2rem;
+        padding-top: 5rem;
+        padding-left: 1rem;
+    }
+    img{
+    	display: none;
     }
 }
