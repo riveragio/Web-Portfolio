@@ -4,8 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easter Egg</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto');
+      body{
+        font-family: 'Roboto', sans-serif;
+        background-color: #F9629F;
+      }
+  
+      h1{
+        text-align: center;
+        color: #FFF;
+        
+      }
+        
+      .cards-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            max-width: 100%;
+            padding: 10px;
+            margin: 0;
+            padding: 0;
+            min-height: 70vh;
+            overflow: hidden;
+        }
+
+        .card1{
+            width: 350px;
+            height: 350px;
+            background-image: url('pics/pic1.png');
+            background-size: cover;
+            border-radius: 8px;
+            border: 3px solid #FFF;
+        }
+
+        .card2{
+            width: 350px;
+            height: 350px;
+            background-image: url('pics/pic2.png');
+            background-size: cover;
+            border-radius: 8px;
+            border: 3px solid #FFF;
+        }
+
+        .card3{
+            width: 350px;
+            height: 350px;
+            background-image: url('pics/pic3.png');
+            background-size: cover;
+            border-radius: 8px;
+            border: 3px solid #FFF;
+        }
+
+        .card4{
+            width: 350px;
+            height: 350px;
+            background-image: url('pics/pic4.png');
+            background-size: cover;
+            border-radius: 8px;
+            border: 3px solid #FFFF;
+        }
+
+        .card1:hover, .card2:hover, .card3:hover, .card4:hover {
+            transform: scale(1.1); /* Increase the scale on hover to create a zoom effect */
+            border: 2px solid #FF00FF; /* Change border to a neon green color on hover */
+            box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF; /* Add a neon glow using box-shadow */
+        }
+    </style>
   </head>
   <body>
-    <h1>This is easter eag</h1>
+
+    <h1>Click each image</h1>
+
+    <div class="cards-container">
+      <div class="card1"></div>
+      <div class="card2"></div>
+      <div class="card3"></div>
+      <div class="card4"></div>
+    </div>
+
+    <audio id="myAudio" src="sound.mp3"></audio>
+
   </body>
 </html>
