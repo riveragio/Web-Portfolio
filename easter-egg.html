@@ -13,7 +13,7 @@
   
       h1{
         text-align: center;
-        color: #FFF;
+        color: #FFFFFF;
         
       }
         
@@ -37,7 +37,7 @@
             background-image: url('pics/pic1.png');
             background-size: cover;
             border-radius: 8px;
-            border: 3px solid #FFF;
+            border: 3px solid #FFFFFF;
         }
 
         .card2{
@@ -46,7 +46,7 @@
             background-image: url('pics/pic2.png');
             background-size: cover;
             border-radius: 8px;
-            border: 3px solid #FFF;
+            border: 3px solid #FFFFFF;
         }
 
         .card3{
@@ -55,7 +55,7 @@
             background-image: url('pics/pic3.png');
             background-size: cover;
             border-radius: 8px;
-            border: 3px solid #FFF;
+            border: 3px solid #FFFFFF;
         }
 
         .card4{
@@ -64,7 +64,7 @@
             background-image: url('pics/pic4.png');
             background-size: cover;
             border-radius: 8px;
-            border: 3px solid #FFFF;
+            border: 3px solid #FFFFFF;
         }
 
         .card1:hover, .card2:hover, .card3:hover, .card4:hover {
@@ -72,11 +72,34 @@
             border: 2px solid #FF00FF; /* Change border to a neon green color on hover */
             box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF; /* Add a neon glow using box-shadow */
         }
+
+        button {
+            color: #FFFFFF;
+            background-color: #FF00FF;
+            font-size: 15px;
+            border: 1px solid #FFFFFF;
+            border-radius: 15px;
+            padding: 15px 30px;
+            letter-spacing: 1px;
+            cursor: pointer
+        }
+        
+        button:hover {
+            color: #FFFFFF;
+            background-color: #0A0A0A;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
     </style>
   </head>
   <body>
 
-    <h1>Click each image</h1>
+    <button type="button">
+      <a href="index.html">Go back</a>
+    </button>
 
     <div class="cards-container">
       <div class="card1"></div>
