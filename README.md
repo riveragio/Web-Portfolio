@@ -31,3 +31,5 @@ to add-
 - Mozilla Firefox
 - IE 11
 - browser with updated technologies
+
+Note: You can use all the resources here for free. You're welcome.
