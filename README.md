@@ -1,7 +1,8 @@
 # Web-Portfolio
 Author: Gio Castillo Rivera
 
-# Description: Website Portfolio project for subject Web Development. Midterm Requirement to be passed on 10/18/2023.
+# Description: 
+Website Portfolio project for subject Web Development. Midterm Requirement to be passed on 10/18/2023.
 
 # Date (last updated):
 - 10/18/2023
