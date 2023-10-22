@@ -2,7 +2,7 @@
 Author: Gio Castillo Rivera
 
 # Description: 
-Website Portfolio project for subject Web Development. Midterm Requirement to be passed on 10/18/2023.
+Website Portfolio project for subject Web Development.
 
 # Languages:
 - HTML, CSS
